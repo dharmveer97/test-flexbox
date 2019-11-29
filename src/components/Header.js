@@ -1,112 +1,114 @@
-/* eslint global-require: 0 */
-
 import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
 
-const Section = styled.section`
-  padding: 1rem 1.5rem;
-  font-family: ${props => props.theme.primaryFontFamily};
-  .navbar {
-    background-color: transparent;
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  .navbar-brand {
-    margin-right: 20px;
-    .navbar-item img {
-      max-height: 3.75rem;
+  .container {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+  }
+  .grid {
+    position: relative;
+    width: 100%;
+  }
+  .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc (33.3333% -20px);
+  }
+  .item-content {
+    position: relative;
+  }
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .item {
+      width: calc (50% - 20px);
     }
-  }
-  .navbar-menu {
-    @media screen and (max-width: 600px) {
-      position: absolute;
-      width: 100%;
-      transition: 0.6s;
-    }
-  }
-  .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
-    :hover {
-      color: ${props => props.theme.darkAccent};
-    }
-  }
-  .navbar-burger {
-    background-color: #1c1323;
-    color: #fff;
-    opacity: 0.6;
-    border-radius: 4px;
   }
 `;
 
-export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isActive: false,
-    };
-  }
-
-  handleMobileMenu() {
-    const { isActive } = this.state;
-
-    this.setState({
-      isActive: !isActive,
-    });
-  }
-
-  render() {
-    const { isActive } = this.state;
-
-    return (
-      <Section className="section">
-        <div className="container">
-          <nav
-            className="navbar"
-            role="navigation"
-            aria-label="main navigation"
-          >
-            <div className="navbar-brand">
-              <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
-              </Link>
-              <a
-                href="#"
-                role="button"
-                className={
-                  isActive
-                    ? 'navbar-burger burger mobile is-active'
-                    : 'navbar-burger burger mobile'
-                }
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-                <span aria-hidden="true" />
-              </a>
-            </div>
-            <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
-                <Link to="/" className="navbar-item">
-                  Home
-                </Link>
-                <Link to="/about" className="navbar-item">
-                  About
-                </Link>
-                <Link to="/news" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </nav>
+const Header = () => (
+  <Wrapper>
+    <div className="container">
+      <div className="grid" id="grid">
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
         </div>
-      </Section>
-    );
-  }
-}
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1553322396-0c9cd410975e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1525983360072-2ebda055ba40?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-content">
+            <img
+              src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+);
+
+export default Header;
