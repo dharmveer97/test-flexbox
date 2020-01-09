@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
   .grid {
     position: relative;
-    width: 100%;
+    width: 99%;
   }
   .item {
     position: absolute;
