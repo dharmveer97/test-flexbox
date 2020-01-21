@@ -6,20 +6,20 @@ import Card from './Card';
 class ReactSlickDemo extends React.Component {
   render() {
     let settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
     return (
-      <section className="section">
+      <section className="section is-medium">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-8">
               <Slider {...settings}>
                 <div>
-                  <Card />
+                  <Card title="" para="" subtitle="" />
                 </div>
                 <div>
                   <Card />
