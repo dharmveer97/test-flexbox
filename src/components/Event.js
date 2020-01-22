@@ -1,22 +1,34 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Event = () => (
-  <div className="card">
-    <div className="card-content">
-      <h1 className="title is-spaced has-text-centered is-4 is-uppercase">
-        Such a fantastic Venue
-      </h1>
-      <p className="subtitle has-text-centered">
-        “Clare, I just wanted to thank all of the Deckerdence team for providing
-        such a fantastic venue for Emily’s 21st party. Our Deckerdence
-        experience last year for our 25th Wedding Anniversary was amazing but
-        the new team led by yourself and Mark, excelled even that.”
-      </p>
-      <h1 className="subtitle is-3 has-text-centered is-spaced has-text-weight-bold ">
-        Emily 00/00/00
-      </h1>
-    </div>
-  </div>
-);
+const Section = styled.div`
+  .is-child {
+    background-image: url('/images/festivals@2x.png');
+    background-size: cover;
+  }
+`;
+
+const Event = () => {
+  return (
+    <Section className="section ">
+      <div className="container">
+        <div className="tile is-ancestor is-mutiline">
+          <div className="tile is-parent">
+            <article className="tile is-child " />
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child " />
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child " />
+          </div>
+          <div className="tile is-parent">
+            <article className="tile is-child " />
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
+};
 
 export default Event;
