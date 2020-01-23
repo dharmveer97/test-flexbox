@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = styled.div`
-  background-image: url('');
-  background-size: cover;
-`;
+const Section = styled.div``;
 
 const Event = () => {
   return (
