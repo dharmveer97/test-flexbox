@@ -2,28 +2,34 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  .is-child {
-    background-image: url('/images/festivals@2x.png');
-    background-size: cover;
-  }
+  background-image: url('');
+  background-size: cover;
 `;
 
 const Event = () => {
   return (
-    <Section className="section ">
+    <Section className="section">
       <div className="container">
-        <div className="tile is-ancestor is-mutiline">
-          <div className="tile is-parent">
-            <article className="tile is-child " />
+        <div className="columns is-multiline is-variable is-5">
+          <div className="column">
+            <figure className="image">
+              <img src="/images/festivals@2x.png" alt="" />
+            </figure>
           </div>
-          <div className="tile is-parent">
-            <article className="tile is-child " />
+          <div className="column">
+            <figure className="image">
+              <img src="/images/festivals@2x.png" alt="" />
+            </figure>
           </div>
-          <div className="tile is-parent">
-            <article className="tile is-child " />
+          <div className="column">
+            <figure className="image">
+              <img src="/images/festivals@2x.png" alt="" />
+            </figure>
           </div>
-          <div className="tile is-parent">
-            <article className="tile is-child " />
+          <div className="column">
+            <figure className="image">
+              <img src="/images/festivals@2x.png" alt="" />
+            </figure>
           </div>
         </div>
       </div>
