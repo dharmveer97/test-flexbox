@@ -52,29 +52,19 @@ export default class CalendarSlider extends Component {
                 <h1 className="title is-1 has-text-centered"> ARCHIVE </h1>
                 <Slider {...settings}>
                   <div>
-                    <figure className="image is-128x128">
-                      <img src="/images/1@2x.png" alt="" />
-                    </figure>
+                    <img src="/images/1@2x.png" alt="" />
                   </div>
                   <div>
-                    <figure className="image is-128x128">
-                      <img src="/images/1@2x.png" alt="" />
-                    </figure>
+                    <img src="/images/1@2x.png" alt="" />
                   </div>
                   <div>
-                    <figure className="image is-128x128">
-                      <img src="/images/1@2x.png" alt="" />
-                    </figure>
+                    <img src="/images/1@2x.png" alt="" />
                   </div>
                   <div>
-                    <figure className="image is-128x128">
-                      <img src="/images/1@2x.png" alt="" />
-                    </figure>
+                    <img src="/images/1@2x.png" alt="" />
                   </div>
                   <div>
-                    <figure className="image is-128x128">
-                      <img src="/images/1@2x.png" alt="" />
-                    </figure>
+                    <img src="/images/1@2x.png" alt="" />
                   </div>
                 </Slider>
               </div>
