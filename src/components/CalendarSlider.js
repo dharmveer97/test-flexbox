@@ -7,7 +7,7 @@ const Section = styled.div`
   background-color: red;
 `;
 
-export default class Responsive extends Component {
+export default class CalendarSlider extends Component {
   render() {
     const settings = {
       dots: false,
@@ -23,7 +23,7 @@ export default class Responsive extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
