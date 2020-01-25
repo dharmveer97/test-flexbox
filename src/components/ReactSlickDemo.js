@@ -5,7 +5,7 @@ import Card from './Card';
 
 class ReactSlickDemo extends React.Component {
   render() {
-    let settings = {
+    const settings = {
       dots: false,
       infinite: true,
       speed: 500,

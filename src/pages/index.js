@@ -4,6 +4,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import ReactSlickDemo from '../components/ReactSlickDemo';
 import Event from '../components/Event';
+import CalendarSlider from '../components/CalendarSlider';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -12,6 +13,7 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <ReactSlickDemo />
         <Event />
+        <CalendarSlider />
       </Layout>
     );
   }
