@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 
 const Section = styled.div`
-  background-color: red;
+  background-color: #e2e3e4;
 `;
 
 export default class CalendarSlider extends Component {
@@ -20,50 +20,48 @@ export default class CalendarSlider extends Component {
     };
     return (
       <Section className="section is-normal">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-10">
-              <div>
-                <h1 className="title is-1 has-text-centered"> ARCHIVE </h1>
-                <Slider {...settings}>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                  <div>
-                    <img src="/images/1@2x.png" alt="" />
-                  </div>
-                </Slider>
-              </div>
+        <div className="columns is-centered">
+          <div className="column is-10">
+            <div>
+              <h1 className="title is-1 has-text-centered"> ARCHIVE </h1>
+              <Slider {...settings}>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+                <div>
+                  <img src="/images/1@2x.png" alt="" />
+                </div>
+              </Slider>
             </div>
           </div>
         </div>
