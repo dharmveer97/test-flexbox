@@ -4,6 +4,10 @@ import styled from 'styled-components';
 
 const Section = styled.div`
   background-color: #e2e3e4;
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
 `;
 
 export default class CalendarSlider extends Component {
