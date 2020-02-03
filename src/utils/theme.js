@@ -51,17 +51,12 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColor};
     letter-spacing: 0.03rem !important;
   }
-  .title {
-    font-family: ${theme.primaryFontFamily};
-  }
+
   .button {
     font-family: ${theme.primaryFontFamily};
   }
   p {
     line-height: 1.5rem;
-  }
-  p, .title, .box {
-    color: ${theme.textColor} !important;
   }
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;

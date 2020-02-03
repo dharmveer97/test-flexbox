@@ -19,7 +19,10 @@ export default class IndexPage extends React.Component {
         <CalendarSlider />
         <Venue />
         <Gallery />
-        <PartiesHero partybgImage="/images/photo@2x.png" />
+        <PartiesHero
+          partybgImage="/images/photo@2x.png"
+          title="Parties for all occasions"
+        />
       </Layout>
     );
   }
