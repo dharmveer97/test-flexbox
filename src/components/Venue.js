@@ -13,6 +13,7 @@ const Section = styled.div`
     font-size: 2rem;
   }
   .containers {
+    position: relative;
   }
 `;
 

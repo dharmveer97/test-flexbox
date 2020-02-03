@@ -6,6 +6,7 @@ import ReactSlickDemo from '../components/ReactSlickDemo';
 import Event from '../components/Event';
 import CalendarSlider from '../components/CalendarSlider';
 import Venue from '../components/Venue';
+import Gallery from '../components/Gallery';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -16,6 +17,7 @@ export default class IndexPage extends React.Component {
         <Event />
         <CalendarSlider />
         <Venue />
+        <Gallery />
       </Layout>
     );
   }
