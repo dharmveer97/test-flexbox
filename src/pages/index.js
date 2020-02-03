@@ -7,6 +7,7 @@ import Event from '../components/Event';
 import CalendarSlider from '../components/CalendarSlider';
 import Venue from '../components/Venue';
 import Gallery from '../components/Gallery';
+import PartiesHero from '../components/PartiesHero';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class IndexPage extends React.Component {
         <CalendarSlider />
         <Venue />
         <Gallery />
+        <PartiesHero partybgImage="/images/photo@2x.png" />
       </Layout>
     );
   }

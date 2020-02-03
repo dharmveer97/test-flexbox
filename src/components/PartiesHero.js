@@ -24,15 +24,12 @@ class PartiesHero extends React.Component {
   render() {
     const { title, partybgImage } = this.props;
     return (
-      <Section
-        className="section is-block is-medium"
-        partybgImage={partybgImage}
-      >
+      <Section className="section  is-medium" partybgImage={partybgImage}>
         <div className="columns is-centered is-desktop">
           <div className="column is-7">
             <div id="box-search">
               <div className="thumbnail text-center">
-                <img src="/images/parties/text-frame@2x.png" alt="" />
+                <img src="/images/frame@2x.png" alt="" />
                 <div className="caption">
                   <h1 className="title is-1 has-text-centered has-text-white is-size-4-mobile">
                     {title}
