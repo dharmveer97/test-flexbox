@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = styled.div`
+  padding: 0rem 1.5rem 9rem 1.5rem;
   background-image: url(${props => props.partybgImage});
   background-size: cover;
   background-repeat: no-repeat;
