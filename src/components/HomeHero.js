@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Section = styled.section`
   background-image: url('/images/two.png');
   background-size: cover;
+  padding: 0rem 1.5rem 9rem 0rem !important;
 `;
 
 const MainContainer = styled.div`
@@ -39,11 +40,7 @@ const HomeHero = () => (
             </div>
           </section>
         </MainContainer>
-
-        <div className="column is-1" />
-        <div className="column is-4">
-          <p>sds</p>
-        </div>
+        <div className="column is-5" />
       </div>
     </div>
   </Section>
