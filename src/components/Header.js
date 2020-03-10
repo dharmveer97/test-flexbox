@@ -7,42 +7,61 @@ const Section = styled.div``;
 const Header = () => (
   <Section className="section">
     <div className="container">
-      <div className="tile is-ancestor">
-        <div className="tile is-parent">
-          <div className="tile is-child box">
-            <p className="title">Three</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              semper diam at erat pulvinar, at pulvinar felis blandit.
-              Vestibulum volutpat tellus diam, consequat gravida libero rhoncus
-              ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta
-              orci, quis semper odio felis ut quam.
-            </p>
-            <p>
-              Suspendisse varius ligula in molestie lacinia. Maecenas varius
-              eget ligula a sagittis. Pellentesque interdum, nisl nec interdum
-            </p>
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          <a className="navbar-item" href="https://bulma.io">
+            <img
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+              height="28"
+              alt=""
+            />
+          </a>
+
+          <a
+            role="button"
+            className="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
+            <a className="navbar-item">Home</a>
+
+            <a className="navbar-item">Documentation</a>
+
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">More</a>
+
+              <div className="navbar-dropdown">
+                <a className="navbar-item">About</a>
+                <a className="navbar-item">Jobs</a>
+                <a className="navbar-item">Contact</a>
+                <hr className="navbar-divider" />
+                <a className="navbar-item">Report an issue</a>
+              </div>
+            </div>
+          </div>
+
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="buttons">
+                <a className="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a className="button is-light">Log in</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="tile is-6 is-vertical is-parent">
-          <div className="tile is-child box">
-            <p className="title">One</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas
-              non massa sem. Etiam finibus odio quis feugiat facilisis.
-            </p>
-          </div>
-          <div className="tile is-child box">
-            <p className="title">Two</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas
-              non massa sem. Etiam finibus odio quis feugiat facilisis.
-            </p>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
   </Section>
 );
