@@ -1,4 +1,5 @@
 import React from 'react';
+import move from 'move-js';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -68,22 +69,6 @@ const MovingRightContainer = styled(Container)`
   }
 `;
 
-// const FireworkContainer = styled.div`
-//   position: absolute;
-//   right: 80px;
-//   .circular-image {
-//     width: 35%;
-//   }
-//   @keyframes rotate360 {
-//     to {
-//       transform: rotate(360deg);
-//     }
-//   }
-//   .circular-image {
-//     animation: 2s rotate360 infinite linear;
-//   }
-// `;
-
 const Content = styled.div`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -100,62 +85,68 @@ const Content = styled.div`
   }
 `;
 
-const HomeHero = ({ bgImage, rocket, section, lol }) => (
-  <Section className="section" bgImage={bgImage}>
-    <div className="container">
-      <figure className="image">
-        <img src="/images/home/banner.png" alt="" />
-      </figure>
-      {/* <FireworkContainer className="circle">
-        <img
-          className="circular-image"
-          id="loading"
-          src="/images/home/firework-5@2x.png"
-          alt="circle"
-        />
-      </FireworkContainer> */}
-      <Content className="columns is-centered">
-        <div className="column is-10 has-text-centered">
-          <h1 className="title is-2 is-size-7-mobile has-text-white has-text-weight-semibold">
-            Get in Touch!
-          </h1>
-          <h1 className="title is-3 is-size-7-mobile has-text-white has-text-weight-semibold">
-            <span className="has-text-grey-lighter has-text-weight-light">
-              Email:
-            </span>
-            deckerdence@deckerdence
-            <span className="has-text-grey-lighter has-text-weight-light">
-              OR Call:
-            </span>
-            12322344534534
-          </h1>
+const HomeHero = ({ bgImage }) => {
+  useEffect(() => {
+    move('#left-moving-item')
+      .translate(300, -700)
+      .delay('3s')
+      .duration('3s')
+      .end();
+    move('#right-moving-item')
+      .translate(-300, -700)
+      .delay('3s')
+      .duration('3s')
+      .end();
+  }, []);
+
+  return (
+    <Section className="section" bgImage={bgImage}>
+      <div className="container">
+        <figure className="image">
+          <img src="/images/home/banner.png" alt="" />
+        </figure>
+        s
+        <Content className="columns is-centered">
+          <div className="column is-10 has-text-centered">
+            <h1 className="title is-2 is-size-7-mobile has-text-white has-text-weight-semibold">
+              Get in Touch!
+            </h1>
+            <h1 className="title is-3 is-size-7-mobile has-text-white has-text-weight-semibold">
+              <span className="has-text-grey-lighter has-text-weight-light">
+                Email:
+              </span>
+              deckerdence@deckerdence
+              <span className="has-text-grey-lighter has-text-weight-light">
+                OR Call:
+              </span>
+              12322344534534
+            </h1>
+          </div>
+        </Content>
+        <div className="columns">
+          <MovingLeftContainer className="column rocket">
+            <img
+              id="square"
+              src="/images/home/layer-one.png"
+              alt="Left-Rocket"
+              width="35%"
+              className="rocket"
+            />
+          </MovingLeftContainer>
+
+          <MovingRightContainer className="column">
+            <img
+              id="square"
+              src="/images/home/layer-two.png"
+              alt="Left-Rocket"
+              width="35%"
+              className="rocket"
+            />
+          </MovingRightContainer>
         </div>
-      </Content>
-      <div className="columns">
-        <MovingLeftContainer
-          className="column"
-          onClick={() => rocketcss(rocket, section, targetPulse )}
-        >
-          <img
-            className="targetPulse "
-            id="left-moving-item"
-            src="/images/home/layer-one.png"
-            alt="Left-Rocket"
-            width="40%"
-          />
-        </MovingLeftContainer>
-        <MovingRightContainer className="column">
-          <img
-            className="targetPulse "
-            id="right-moving-item"
-            src="/images/home/layer-two.png"
-            alt="Left-Rocket"
-            width="40%"
-          />
-        </MovingRightContainer>
       </div>
-    </div>
-  </Section>
-);
+    </Section>
+  );
+};
 
 export default HomeHero;

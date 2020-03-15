@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Frame } from 'framer';
-
 import styled from 'styled-components';
 
 // const move = typeof window !== `undefined` ? require('move-js') : null;
