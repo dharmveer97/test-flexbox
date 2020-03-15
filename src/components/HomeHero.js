@@ -100,7 +100,7 @@ const Content = styled.div`
   }
 `;
 
-const HomeHero = ({ bgImage }) => (
+const HomeHero = ({ bgImage, rocket, section, lol }) => (
   <Section className="section" bgImage={bgImage}>
     <div className="container">
       <figure className="image">
@@ -132,8 +132,12 @@ const HomeHero = ({ bgImage }) => (
         </div>
       </Content>
       <div className="columns">
-        <MovingLeftContainer className="column">
+        <MovingLeftContainer
+          className="column"
+          onClick={() => rocketcss(rocket, section, targetPulse )}
+        >
           <img
+            className="targetPulse "
             id="left-moving-item"
             src="/images/home/layer-one.png"
             alt="Left-Rocket"
@@ -142,6 +146,7 @@ const HomeHero = ({ bgImage }) => (
         </MovingLeftContainer>
         <MovingRightContainer className="column">
           <img
+            className="targetPulse "
             id="right-moving-item"
             src="/images/home/layer-two.png"
             alt="Left-Rocket"
