@@ -34,12 +34,9 @@ const Header = () => (
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <a className="navbar-item">Home</a>
-
             <a className="navbar-item">Documentation</a>
-
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">More</a>
-
               <div className="navbar-dropdown">
                 <a className="navbar-item">About</a>
                 <a className="navbar-item">Jobs</a>
@@ -49,7 +46,6 @@ const Header = () => (
               </div>
             </div>
           </div>
-
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">

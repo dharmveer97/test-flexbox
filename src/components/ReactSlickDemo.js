@@ -1,7 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import Slider from 'react-slick';
 
 import Card from './Card';
+
+const Section = styled.div`
+  background-color: beige;
+`;
 
 class ReactSlickDemo extends React.Component {
   render() {
@@ -13,7 +18,7 @@ class ReactSlickDemo extends React.Component {
       slidesToScroll: 1,
     };
     return (
-      <section className="section is-medium">
+      <Section className="section is-medium">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-8">
@@ -40,7 +45,7 @@ class ReactSlickDemo extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     );
   }
 }
