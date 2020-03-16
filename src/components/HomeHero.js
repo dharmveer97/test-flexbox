@@ -1,5 +1,5 @@
 import React from 'react';
-import move from 'move-js';
+
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -29,6 +29,16 @@ const Section = styled.section`
   figure {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .axis:hover .move-ne {
+    transform: translate(300px, -200px);
+  }
+  .axis:hover .move-two {
+    transform: translate(-200px, -200px);
+  }
+  .object {
+    transition: all 2s ease-in-out;
   }
 `;
 
@@ -86,26 +96,12 @@ const Content = styled.div`
 `;
 
 const HomeHero = ({ bgImage }) => {
-  useEffect(() => {
-    move('#left-moving-item')
-      .translate(300, -700)
-      .delay('3s')
-      .duration('3s')
-      .end();
-    move('#right-moving-item')
-      .translate(-300, -700)
-      .delay('3s')
-      .duration('3s')
-      .end();
-  }, []);
-
   return (
     <Section className="section" bgImage={bgImage}>
       <div className="container">
         <figure className="image">
           <img src="/images/home/banner.png" alt="" />
         </figure>
-        s
         <Content className="columns is-centered">
           <div className="column is-10 has-text-centered">
             <h1 className="title is-2 is-size-7-mobile has-text-white has-text-weight-semibold">
@@ -123,24 +119,20 @@ const HomeHero = ({ bgImage }) => {
             </h1>
           </div>
         </Content>
-        <div className="columns">
-          <MovingLeftContainer className="column rocket">
+        <div className="columns axis">
+          <MovingLeftContainer className="column rocket  object plane move-ne">
             <img
-              id="square"
+              className="object plane move-ne"
               src="/images/home/layer-one.png"
-              alt="Left-Rocket"
-              width="35%"
-              className="rocket"
+              alt=""
             />
           </MovingLeftContainer>
 
-          <MovingRightContainer className="column">
+          <MovingRightContainer className="column rocket  object plane move-two">
             <img
-              id="square"
+              className="object plane move-two"
               src="/images/home/layer-two.png"
-              alt="Left-Rocket"
-              width="35%"
-              className="rocket"
+              alt=""
             />
           </MovingRightContainer>
         </div>
