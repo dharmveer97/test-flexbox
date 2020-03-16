@@ -32,10 +32,10 @@ const Section = styled.section`
   }
 
   .axis:hover .move-ne {
-    transform: translate(300px, -200px);
+    transform: translate(200px, -150px);
   }
   .axis:hover .move-two {
-    transform: translate(-200px, -200px);
+    transform: translate(-200px, -150px);
   }
   .object {
     transition: all 2s ease-in-out;
