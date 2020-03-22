@@ -9,9 +9,6 @@ const Section = styled.div`
     color: ${props => props.theme.lightShades} !important;
   }
   .input {
-    input:valid {
-      background-color: #00ff7f;
-    }
     border: 1px solid ${props => props.theme.borderColor};
     display: block;
     margin: 0 0 1.5rem;
