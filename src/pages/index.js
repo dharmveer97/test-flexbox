@@ -9,6 +9,7 @@ import Gallery from '../components/Gallery';
 import PartiesHero from '../components/PartiesHero';
 import HomeHero from '../components/HomeHero';
 import VenueSection from '../components/VenueSection';
+import ContactForm from '../components/ContactForm';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -25,6 +26,7 @@ export default class IndexPage extends React.Component {
           title="Parties for all occasions"
         />
         <VenueSection />
+        <ContactForm />
       </Layout>
     );
   }

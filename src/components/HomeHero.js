@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 
@@ -96,16 +96,6 @@ const Content = styled.div`
 `;
 
 const HomeHero = ({ bgImage }) => {
-  useEffect(() => {
-    move('#left-moving-item')
-      .delay('3s')
-      .duration('3s')
-      .end();
-    move('#right-moving-item')
-      .delay('3s')
-      .duration('3s')
-      .end();
-  }, []);
   return (
     <Section className="section" bgImage={bgImage}>
       <div className="container">
@@ -137,7 +127,6 @@ const HomeHero = ({ bgImage }) => {
               alt=""
             />
           </MovingLeftContainer>
-
           <MovingRightContainer className="column rocket  object plane move-two">
             <img
               className="object plane move-two"
