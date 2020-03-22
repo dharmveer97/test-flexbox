@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import styled from 'styled-components';
 
@@ -96,6 +96,16 @@ const Content = styled.div`
 `;
 
 const HomeHero = ({ bgImage }) => {
+  useEffect(() => {
+    move('#left-moving-item')
+      .delay('3s')
+      .duration('3s')
+      .end();
+    move('#right-moving-item')
+      .delay('3s')
+      .duration('3s')
+      .end();
+  }, []);
   return (
     <Section className="section" bgImage={bgImage}>
       <div className="container">
