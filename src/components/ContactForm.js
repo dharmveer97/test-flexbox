@@ -106,7 +106,7 @@ class ContactForm extends React.Component {
                 </button>
               </div>
             </form>
-          </div>{' '}
+          </div>
         </div>
       </Section>
     );
