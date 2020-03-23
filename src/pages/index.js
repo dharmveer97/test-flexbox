@@ -10,6 +10,7 @@ import PartiesHero from '../components/PartiesHero';
 import HomeHero from '../components/HomeHero';
 import VenueSection from '../components/VenueSection';
 import ContactForm from '../components/ContactForm';
+import HireHero from '../components/HireHero';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -27,6 +28,10 @@ export default class IndexPage extends React.Component {
         />
         <VenueSection />
         <ContactForm />
+        <HireHero
+          partyBgImage="/images/photo@2x.png"
+          title="Parties for all occasions"
+        />
       </Layout>
     );
   }
