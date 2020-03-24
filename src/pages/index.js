@@ -19,19 +19,19 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <HomeHero bgImage="/images/home/back.jpg" />
         <ReactSlickDemo />
-        <Event />
         <CalendarSlider />
         <Gallery />
-        <PartiesHero
-          partybgImage="/images/photo@2x.png"
-          title="Parties for all occasions"
-        />
         <VenueSection />
-        <ContactForm />
         <HireHero
           partyBgImage="/images/photo@2x.png"
           title="Parties for all occasions"
         />
+        <PartiesHero
+          partybgImage="/images/photo@2x.png"
+          title="Parties for all occasions"
+        />
+        <Event />
+        <ContactForm />
       </Layout>
     );
   }
