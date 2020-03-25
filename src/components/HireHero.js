@@ -18,23 +18,47 @@ const Section = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   h1 {
     font-size: 3.5rem;
   }
 `;
 
+const LeftWrapper = styled.div`
+  image {
+    position: absolute;
+    left: 0;
+  }
+`;
+const CenteredWrapper = styled.div``;
+
+const RitWrapper = styled.div`
+  image {
+    position: absolute;
+    right: 0;
+  }
+`;
+
 const HireHero = ({ title, partyBgImage }) => (
   <Section className="section is-medium" partyBgImage={partyBgImage}>
-    <div className="image-wrapper">
-      <figure className="image is-128x128">
-        <img src="/images/ball-copy@2x.png" alt="" />
-      </figure>
+    <div className="columns is-mobile">
+      <LeftWrapper className="column">
+        <figure className="image is-128x128">
+          <img src="/images/ball-copy@2x.png" alt="" />
+        </figure>
+      </LeftWrapper>
+      <CenteredWrapper className="column">
+        <figure className="image is-128x128">
+          <img src="/images/ball-copy@2x.png" alt="" />
+        </figure>
+      </CenteredWrapper>
+      <RitWrapper className="column">
+        <figure className="image is-128x128 ">
+          <img src="/images/ball-copy@2x.png" alt="" />
+        </figure>
+      </RitWrapper>
     </div>
+
     <div className="columns is-centered is-desktop">
       <div className="column is-7">
         <div className="area">

@@ -22,16 +22,17 @@ export default class IndexPage extends React.Component {
         <CalendarSlider />
         <Gallery />
         <VenueSection />
-        <HireHero
-          partyBgImage="/images/photo@2x.png"
-          title="Parties for all occasions"
-        />
+
         <PartiesHero
           partybgImage="/images/photo@2x.png"
           title="Parties for all occasions"
         />
         <Event />
         <ContactForm />
+        <HireHero
+          partyBgImage="/images/photo@2x.png"
+          title="Parties for all occasions"
+        />
       </Layout>
     );
   }
