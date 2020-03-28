@@ -30,7 +30,7 @@ const LeftWrapper = styled.div`
     left: 0;
   }
 `;
-const CenteredWrapper = styled.div``;
+// const CenteredWrapper = styled.div``;
 
 const RitWrapper = styled.div`
   image {
@@ -47,11 +47,11 @@ const HireHero = ({ title, partyBgImage }) => (
           <img src="/images/ball-copy@2x.png" alt="" />
         </figure>
       </LeftWrapper>
-      <CenteredWrapper className="column">
+      {/* <CenteredWrapper className="column">
         <figure className="image is-128x128">
           <img src="/images/ball-copy@2x.png" alt="" />
         </figure>
-      </CenteredWrapper>
+      </CenteredWrapper> */}
       <RitWrapper className="column">
         <figure className="image is-128x128 ">
           <img src="/images/ball-copy@2x.png" alt="" />
