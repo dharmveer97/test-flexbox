@@ -11,6 +11,7 @@ import HomeHero from '../components/HomeHero';
 import VenueSection from '../components/VenueSection';
 import ContactForm from '../components/ContactForm';
 import HireHero from '../components/HireHero';
+import GreyScale from '../components/GreyScale';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -22,7 +23,6 @@ export default class IndexPage extends React.Component {
         <CalendarSlider />
         <Gallery />
         <VenueSection />
-
         <PartiesHero
           partybgImage="/images/photo@2x.png"
           title="Parties for all occasions"
@@ -33,6 +33,7 @@ export default class IndexPage extends React.Component {
           partyBgImage="/images/photo@2x.png"
           title="Parties for all occasions"
         />
+        <GreyScale />
       </Layout>
     );
   }
