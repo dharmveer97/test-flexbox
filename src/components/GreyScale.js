@@ -9,7 +9,6 @@ const Section = styled.div`
     filter: grayscale(1);
     transition: all 0.8s ease-in-out;
   }
-
   img:hover {
     filter: none;
     filter: grayscale(0);
