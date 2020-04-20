@@ -1,5 +1,7 @@
 import React from 'react';
+import ModalImage from 'react-modal-image';
 import styled from 'styled-components';
+// import ImageModel from './ImageModel';
 
 const Section = styled.div`
   img {
@@ -11,17 +13,14 @@ const Section = styled.div`
   img:hover {
     filter: none;
     filter: grayscale(0);
-    transform: scale(1.01);
   }
 `;
 
-const GreyScale = () => (
+const GreyScale = ({ src, alt }) => (
   <Section className="">
     <div className="columns">
       <div className="column is-4">
-        <figure className="image is-5by4">
-          <img src="/images/home/colored.jpg" alt="" />
-        </figure>
+        <ModalImage small={src} large={src} alt={alt} hideDownload />
       </div>
     </div>
   </Section>
