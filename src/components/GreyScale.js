@@ -1,7 +1,6 @@
 import React from 'react';
 import ModalImage from 'react-modal-image';
 import styled from 'styled-components';
-// import ImageModel from './ImageModel';
 
 const Section = styled.div`
   img {
@@ -13,13 +12,27 @@ const Section = styled.div`
     filter: none;
     filter: grayscale(0);
   }
+  .__react_modal_image__medium_img {
+    max-width: 98%;
+    max-height: 98%;
+  }
+  .modal_small_image {
+    width: 100% !important;
+    height: 370px !important;
+  }
 `;
 
 const GreyScale = ({ src, alt }) => (
   <Section className="">
     <div className="columns">
       <div className="column is-4">
-        <ModalImage small={src} large={src} alt={alt} hideDownload />
+        <ModalImage
+          large={src}
+          alt={alt}
+          hideDownload
+          small={src}
+          className="modal_small_image"
+        />
       </div>
     </div>
   </Section>

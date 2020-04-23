@@ -44,7 +44,7 @@ const HireHero = ({ title, partyBgImage }) => (
     <div className="columns is-mobile">
       <LeftWrapper className="column">
         <figure className="image is-128x128">
-          <img src="/images/ball-copy@2x.png" alt="" />
+          <img src="/images/home/lovely.gif" alt="" />
         </figure>
       </LeftWrapper>
       {/* <CenteredWrapper className="column">
@@ -54,7 +54,7 @@ const HireHero = ({ title, partyBgImage }) => (
       </CenteredWrapper> */}
       <RitWrapper className="column">
         <figure className="image is-128x128 ">
-          <img src="/images/ball-copy@2x.png" alt="" />
+          <img src="/images/home/image_1587634058.gif" alt="" />
         </figure>
       </RitWrapper>
     </div>

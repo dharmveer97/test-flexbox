@@ -33,7 +33,7 @@ export default class IndexPage extends React.Component {
           partyBgImage="/images/photo@2x.png"
           title="Parties for all occasions"
         />
-        <GreyScale src="/images/photo-6@2x.png" alt="" />
+        <GreyScale src="/images/photo-6@2x.jpg" alt="alt" />
       </Layout>
     );
   }
