@@ -10,37 +10,18 @@ const Section = styled.section`
       padding-top: 2rem;
     }
   }
-  .hero {
-    /* height: 35rem; */
+  .column {
     background-image: url(${props => props.bannerImg});
+    padding: 2rem 7rem !important;
+    @media only screen and (device-width: 768px) {
+      padding: 90px 80px 70px 80px !important;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 90px 40px 70px 40px !important;
+    }
     background-repeat: no-repeat;
-    /* margin-top: 4rem !important; */
-    /* margin-top: 4rem !important;
-    margin-bottom: 4rem !important; */
     background-size: 100% 100% !important;
-    /* min-height:30rem; */
-    display: grid !important;
-    align-content: center !important;
-    /* padding: 1rem 7rem !important; */
-    /* background-position: center !important;
-    display: grid !important;
-    align-content: center !important;
-    padding: 1rem 7rem !important;
-    @media screen and (max-width: 600px) {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 1rem 2rem;
-      background-size: cover;
-    } */
   }
-
-  /* .subtitle.is-5 {
-    font-family: ${props => props.theme.primaryFontFamily};
-    line-height: 1.6;
-  }
-  h1 {
-    padding-top: 1rem;
-  } */
 `;
 
 const HomePageSection = ({
@@ -54,28 +35,30 @@ const HomePageSection = ({
   <Section flex={flex} bgImg={bgImg} bannerImg={bannerImg}>
     <div className="section is-block">
       <div className="columns">
-        <div className="column is-7">
-          <section className="hero is-medium">
-            <div className="hero-body">
-              {title && (
-                <h1 className="title is-3 has-text-white has-text-weight-normal	is-spaced">
-                  {title}
-                </h1>
-              )}
-              {description && (
-                <p className="subtitle is-5 has-text-white has-text-weight-normal">
-                  {description}
-                </p>
-              )}
-              {button && (
+        <div className="column is-7 hero is-medium">
+          <section className="hero-body">
+            {title && (
+              <h1 className="title is-3 has-text-white has-text-weight-normal	is-spaced has-text-centered-mobile">
+                {title}
+              </h1>
+            )}
+            {description && (
+              <p className="subtitle has-text-centered-mobile is-5 has-text-white has-text-weight-normal">
+                {description}
+              </p>
+            )}
+            {button && (
+              <div className="has-text-centered-mobile">
                 <button
                   className="button is-link is-medium"
                   type="button"
                   alt="Learn More Button"
                   haswidth="50%"
-                />
-              )}
-            </div>
+                >
+                  ddd
+                </button>
+              </div>
+            )}
           </section>
         </div>
       </div>
