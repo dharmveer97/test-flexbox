@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import ReactSlickDemo from '../components/ReactSlickDemo';
 import Event from '../components/Event';
 import CalendarSlider from '../components/CalendarSlider';
-import Gallery from '../components/Gallery';
+import HomePageSection from '../components/HomePageSection';
 import PartiesHero from '../components/PartiesHero';
 import HomeHero from '../components/HomeHero';
 import VenueSection from '../components/VenueSection';
@@ -21,7 +21,14 @@ export default class IndexPage extends React.Component {
         <HomeHero bgImage="/images/home/back.jpg" />
         <ReactSlickDemo />
         <CalendarSlider />
-        <Gallery />
+        <HomePageSection
+          title="Weddings"
+          description="Say yes to the perfect wedding venue. Have your special day at our event space in the Warwickshire countryside or take our vintage mobile venue to a location of your choosing. Whether you want to go traditional with silver service or festival-style with the best street food vendors, we can create your dream wedding"
+          flex
+          bgImg="/images/basic/local.jpg"
+          button="lol"
+          bannerImg="/images/basic/frame.png"
+        />
         <VenueSection />
         <PartiesHero
           partybgImage="/images/photo@2x.png"

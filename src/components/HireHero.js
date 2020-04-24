@@ -18,7 +18,6 @@ const Section = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   h1 {
     font-size: 3.5rem;
   }
