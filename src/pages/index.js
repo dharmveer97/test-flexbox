@@ -12,6 +12,7 @@ import VenueSection from '../components/VenueSection';
 import ContactForm from '../components/ContactForm';
 import HireHero from '../components/HireHero';
 import GreyScale from '../components/GreyScale';
+import Venue from '../components/Venue';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -19,6 +20,14 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <HomeHero bgImage="/images/home/back.jpg" />
+        <Venue
+          flex
+          color
+          text="Deckerdence is a superb and unusual venue for your special event that can be decorated and dressed to suit any theme."
+          frameBgImage="/images/basic/back-one.jpg"
+          alt="alt"
+          frame="/images/basic/secondFrame.png"
+        />
         <ReactSlickDemo />
         <CalendarSlider />
         <HomePageSection
