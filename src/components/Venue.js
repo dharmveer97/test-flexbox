@@ -5,12 +5,6 @@ const Section = styled.div`
   background-image: url(${props => props.frameBgImage});
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
   .columns {
     justify-content: ${props => (props.flex ? 'flex-end' : 'flex-start')};
   }
@@ -21,6 +15,13 @@ const Section = styled.div`
   p {
     color: ${props => (props.color ? '#fff' : '#2c2c2a')} !important;
   }
+  .hero.is-medium .hero-body {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+  }
 `;
 
 const Venue = ({ text, frameBgImage, flex, color }) => (
@@ -28,12 +29,13 @@ const Venue = ({ text, frameBgImage, flex, color }) => (
     className="section is-medium"
     frameBgImage={frameBgImage}
     flex={flex}
+    color={color}
   >
     <div className="container">
       <div className="columns is-vcentered">
         <div className="column is-6 hero is-medium">
           <div className="hero-body">
-            <p className="title is-4 text has-text-centered has-text-weight-normal">
+            <p className="title is-4 is-size-6-mobile text has-text-centered has-text-weight-normal">
               {text}
             </p>
           </div>
