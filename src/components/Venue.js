@@ -20,7 +20,6 @@ const Section = styled.div`
     padding-top: 6rem;
     padding-right: 4rem;
     padding-left: 4rem;
-}
   }
 `;
 
