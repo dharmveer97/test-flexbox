@@ -34,6 +34,24 @@ const GreyScale = ({ src, alt }) => (
           className="modal_small_image"
         />
       </div>
+      <div className="column is-4">
+        <ModalImage
+          large={src}
+          alt={alt}
+          hideDownload
+          small={src}
+          className="modal_small_image"
+        />
+      </div>
+      <div className="column is-4">
+        <ModalImage
+          large={src}
+          alt={alt}
+          hideDownload
+          small={src}
+          className="modal_small_image"
+        />
+      </div>
     </div>
   </Section>
 );
