@@ -16,10 +16,10 @@ const Section = styled.div`
     color: ${props => (props.color ? '#fff' : '#2c2c2a')} !important;
   }
   .hero.is-medium .hero-body {
-    padding-bottom: 6rem;
-    padding-top: 6rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-bottom: 6rem !important;
+    padding-top: 6rem !important;
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
   }
 `;
 
