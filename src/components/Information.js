@@ -8,7 +8,7 @@ const Information = () => (
     <div className="container">
       <div className="tile is-ancestor">
         <div className="tile is-6 is-vertical is-parent">
-          <div className="tile is-child ">
+          <div className="tile is-child">
             <p className="title">One</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -26,8 +26,8 @@ const Information = () => (
           </div>
         </div>
         <div className="tile is-parent">
-          <div className="tile is-child ">
-            <figure className="image is-square">
+          <div className="tile is-child">
+            <figure className="image is-5by4">
               <img src="/images/photo@2x.png" alt="" />
             </figure>
           </div>
