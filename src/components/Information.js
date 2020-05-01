@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Section = styled.div``;
 
 const Information = () => (
-  <Section className="section ">
+  <Section className="section">
     <div className="container">
       <div className="tile is-ancestor">
         <div className="tile is-6 is-vertical is-parent">
