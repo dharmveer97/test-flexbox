@@ -15,7 +15,6 @@ import GreyScale from '../components/GreyScale';
 import Venue from '../components/Venue';
 import Information from '../components/Information';
 import Info from '../components/Info';
-import Steps from '../components/Steps';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -55,7 +54,6 @@ export default class IndexPage extends React.Component {
         <GreyScale src="/images/photo-6@2x.jpg" alt="alt" />
         <Information />
         <Info />
-        <Steps />
       </Layout>
     );
   }
