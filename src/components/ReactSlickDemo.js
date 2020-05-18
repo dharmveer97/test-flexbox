@@ -1,53 +1,85 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import Card from './Card';
+import styled from 'styled-components';
 
 const Section = styled.div`
-  background-color: beige;
+  padding: 3rem 1.5rem;
+
+  background-repeat: no-repeat;
+  /* background-color: #f7f9fb; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-position-y: 100%;
+  .slick-slider {
+    width: 328px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 18px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 8px;
+    border-radius: 61px;
+  }
+  .slick-slider::before {
+    content: '';
+    background-image: url(https://www.packrs.co/images/iphone-mokeup.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 `;
 
-class ReactSlickDemo extends React.Component {
+export default class ReactSlickDemo extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
     };
     return (
-      <Section className="section is-medium">
+      <Section className="section">
         <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-8">
-              <Slider {...settings}>
-                <div>
-                  <Card title="" para="" subtitle="" />
-                </div>
-                <div>
-                  <Card />
-                </div>
-                <div>
-                  <Card />
-                </div>
-                <div>
-                  <Card />
-                </div>
-                <div>
-                  <Card />
-                </div>
-                <div>
-                  <Card />
-                </div>
-              </Slider>
+          <Slider {...settings}>
+            <div>
+              <img
+                src="https://www.packrs.co/images/app-screens/screen-4.png"
+                alt=""
+              />
             </div>
-          </div>
+            <div>
+              <img
+                src="https://www.packrs.co/images/app-screens/screen-4.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.packrs.co/images/app-screens/screen-4.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.packrs.co/images/app-screens/screen-4.png"
+                alt=""
+              />
+            </div>
+          </Slider>
         </div>
       </Section>
     );
   }
 }
-
-export default ReactSlickDemo;

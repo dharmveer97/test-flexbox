@@ -5,32 +5,33 @@ const Section = styled.div``;
 
 const Information = () => (
   <Section className="section">
-    <div className="container">
-      <div className="tile is-ancestor">
-        <div className="tile is-6 is-vertical is-parent">
-          <div className="tile is-child">
-            <p className="title">One</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas
-              non massa sem. Etiam finibus odio quis feugiat facilisis.
-            </p>
-          </div>
-          <div className="tile is-child ">
-            <p className="title">Two</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas
-              non massa sem. Etiam finibus odio quis feugiat facilisis.
-            </p>
+    <div className="container-fluid">
+      <div className="row">
+        <div
+          className="col-sm-3 col-md-6 bg-success"
+          style="background-color:yellow;"
+        >
+          <div className="media">
+            <img
+              className="align-self-start mr-3"
+              src="img_avatar1.png"
+              alt="Generic"
+              width="150"
+              height="150"
+            />
+            <div className="media-body">
+              <h5 className="mt-0">Top-aligned media</h5>
+              <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                vulputate at, tempus viverra sociis natoque, nascetur ridiculus
+                mus.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="tile is-parent">
-          <div className="tile is-child">
-            <figure className="image is-5by4">
-              <img src="/images/photo@2x.png" alt="" />
-            </figure>
-          </div>
+        <div className="col-md-6" style="background-color:orange;">
+          50%
         </div>
       </div>
     </div>
