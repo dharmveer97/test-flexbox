@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const Section = styled.div`
   background-image: url('/images/hireFormBg.png');
