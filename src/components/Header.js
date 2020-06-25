@@ -10,7 +10,7 @@ const Section = styled.section`
     background-color: transparent;
   }
   .logo {
-    max-height: 9.5rem !important;
+    max-height: 38px !important;
     height: auto;
     margin-left: -0.5rem;
     @media screen and (max-width: 600px) {
@@ -49,13 +49,6 @@ const Section = styled.section`
   }
 `;
 
-const ContactWrapper = styled.div`
-  margin-bottom: -0.2rem !important;
-  margin-top: 1rem;
-  font-family: ${props => props.theme.secondaryFontFamily};
-  color: ${props => props.theme.textColorLite};
-`;
-
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -79,22 +72,6 @@ export default class Header extends React.Component {
     return (
       <Section className="section">
         <div className="container">
-          <div className="columns" />
-          <ContactWrapper className="columns">
-            <div className="column is-flex">
-              <div className="navbar-end">
-                <Link to="/promotional" className="navbar-item">
-                  Promotional Buses
-                </Link>
-                <Link to="/eventsupport" className="navbar-item">
-                  Event Support
-                </Link>
-                <Link to="/vehicle" className="navbar-item">
-                  Vehicle Branding
-                </Link>
-              </div>
-            </div>
-          </ContactWrapper>
           <nav
             className="navbar"
             role="navigation"
@@ -102,7 +79,11 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img className="logo" src="/images/logo.jpg" alt="site logo" />
+                <img
+                  className="logo"
+                  src="http://softlab.wgl-demo.net/wp-content/uploads/2019/02/logo_dark.png"
+                  alt="site logo"
+                />
               </Link>
               <a
                 href="#"
