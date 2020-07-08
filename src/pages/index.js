@@ -12,6 +12,7 @@ import HireHero from '../components/HireHero';
 import GreyScale from '../components/GreyScale';
 import Venue from '../components/Venue';
 import Info from '../components/Info';
+import Animations from '../components/Animations';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -48,6 +49,7 @@ export default class IndexPage extends React.Component {
         />
         <GreyScale src="/images/photo-6@2x.jpg" alt="alt" />
         <Info />
+        <Animations />
       </Layout>
     );
   }
