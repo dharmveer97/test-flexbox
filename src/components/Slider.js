@@ -1,5 +1,33 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import styled from 'styled-components';
+
+const Section = styled.div``;
+
+const Button = styled.button`
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  :hover,
+  :focus {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  :focus:not(:active) {
+    box-shadow: none;
+  }
+`;
+const data = [
+  {
+    url:
+      'https://image.shutterstock.com/image-photo/beautiful-pink-flower-anemones-fresh-260nw-1028135845.jpg',
+  },
+
+  {
+    url: 'https://www.w3schools.com/w3css/img_lights.jpg',
+  },
+];
 
 export default class PreviousNextMethods extends Component {
   constructor(props) {
@@ -18,44 +46,39 @@ export default class PreviousNextMethods extends Component {
 
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
+      fade: true,
       slidesToScroll: 1,
+      variableWidth: false,
+      adaptiveHeight: false,
+      autoplay: false,
     };
     return (
-      <div>
+      <Section>
         <h2>Previous and Next methods</h2>
         <Slider ref={c => (this.slider = c)} {...settings}>
-          <div key={1}>
-            <h3>1</h3>
-          </div>
-          <div key={2}>
-            <h3>2</h3>
-          </div>
-          <div key={3}>
-            <h3>3</h3>
-          </div>
-          <div key={4}>
-            <h3>4</h3>
-          </div>
-          <div key={5}>
-            <h3>5</h3>
-          </div>
-          <div key={6}>
-            <h3>6</h3>
-          </div>
+          {data.map(item => (
+            <div>
+              <img src={item.url} alt="" />
+            </div>
+          ))}
         </Slider>
-        <div style={{ textAlign: 'center' }}>
-          <button className="button" onClick={this.previous}>
-            Previous
-          </button>
-          <button className="button" onClick={this.next}>
-            Next
-          </button>
+        <div>
+          <Button type="button" className="button" onClick={this.previous}>
+            <span className="icon is-small">
+              <i className="fas fa-arrow-left" />
+            </span>
+          </Button>
+          <Button type="button" className="button" onClick={this.next}>
+            <span className="icon is-small">
+              <i className="fas fa-arrow-right" />
+            </span>
+          </Button>
         </div>
-      </div>
+      </Section>
     );
   }
 }

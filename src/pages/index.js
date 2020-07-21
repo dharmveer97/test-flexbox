@@ -5,7 +5,6 @@ import Layout from '../components/Layout';
 import Event from '../components/Event';
 import HomePageSection from '../components/HomePageSection';
 import PartiesHero from '../components/PartiesHero';
-import HomeHero from '../components/HomeHero';
 import VenueSection from '../components/VenueSection';
 import ContactForm from '../components/ContactForm';
 import HireHero from '../components/HireHero';
@@ -19,7 +18,6 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <HomeHero bgImage="/images/home/back.jpg" />
         <Venue
           flex
           color
