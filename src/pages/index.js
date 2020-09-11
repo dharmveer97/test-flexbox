@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
           frame="/images/basic/secondFrame.png"
         />
         <HomePageSection
-          title="Weddings"
+          title="kunal sharma"
           description="Say yes to the perfect wedding venue. Have your special day at our event space in the Warwickshire countryside or take our vintage mobile venue to a location of your choosing. Whether you want to go traditional with silver service or festival-style with the best street food vendors, we can create your dream wedding"
           flex
           bgImg="/images/basic/local.jpg"
