@@ -19,7 +19,7 @@ const MyVideo = () => {
       <div className="container">
         <Card className="card">
           <video controls>
-            <source src={config.audio} type="video/webm" />
+            <source src={config.audio2} type="video/webm" />
           </video>
         </Card>
       </div>
