@@ -1,17 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Card = styled.div`
+  justify-content: center;
+  display: flex;
+  video {
+    height: 171px !important;
+    position: relative !important;
+    top: -58px !important;
+  }
+`;
 
 const MyVideo = () => {
   return (
     <div className="section">
       <div className="container">
-        <div className="card">
-          <video controls width="250">
+        <Card className="card">
+          <video controls>
             <source
               src="https://radio.sikhnet.com/accounts/channel9/live"
               type="video/webm"
             />
           </video>
-        </div>
+        </Card>
       </div>
     </div>
   );
