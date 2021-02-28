@@ -7,12 +7,12 @@ function App() {
         <div className="card">
           {/* http://radio2.sikhnet.com:8033/live */}
           <div className="card-content">
-            <audio controls>
+            <video controls>
               <source
                 src="http://radio2.sikhnet.com:8033/live"
                 type="audio/mpeg"
               />
-            </audio>
+            </video>
           </div>
         </div>
       </div>
