@@ -13,7 +13,7 @@ const Card = styled.div`
 
 const MyVideo = () => {
   return (
-    <div className="section">
+    <div className="section hero is-info">
       <div className="container">
         <Card className="card">
           <video controls>

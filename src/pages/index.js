@@ -12,7 +12,7 @@ import Layout from '../components/Layout';
 // import GreyScale from '../components/GreyScale';
 // import Info from '../components/Info';
 
-import Venue from '../components/Venue';
+// import Venue from '../components/Venue';
 import Video from '../components/Video';
 
 export default class IndexPage extends React.Component {
@@ -20,15 +20,16 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <Venue
+        <Video />
+        {/* <Venue
           flex
           color
           text="Deckerdence is a superb and unusual venue for your special event that can be decorated and dressed to suit any theme."
           frameBgImage="/images/basic/back-one.jpg"
           alt="alt"
           frame="/images/basic/secondFrame.png"
-        />
-        <Video />
+        /> */}
+
         {/* <HomePageSection
           title="kunal sharma"
           description="Say yes to the perfect wedding venue. Have your special day at our event space in the Warwickshire countryside or take our vintage mobile venue to a location of your choosing. Whether you want to go traditional with silver service or festival-style with the best street food vendors, we can create your dream wedding"
