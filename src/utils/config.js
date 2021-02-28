@@ -16,4 +16,6 @@ module.exports = {
   googleAnalytics: '',
   backgroundColor: '#e0e0e0',
   themeColor: '#c62828',
+  audio: 'https://radio.sikhnet.com/accounts/channel9/live',
+  audio2: 'http://radio2.sikhnet.com:8033/live',
 };
