@@ -2,16 +2,18 @@ import React from 'react';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import Event from '../components/Event';
-import HomePageSection from '../components/HomePageSection';
-import PartiesHero from '../components/PartiesHero';
-import VenueSection from '../components/VenueSection';
-import ContactForm from '../components/ContactForm';
-import HireHero from '../components/HireHero';
-import GreyScale from '../components/GreyScale';
+
+// import Event from '../components/Event';
+// import HomePageSection from '../components/HomePageSection';
+// import PartiesHero from '../components/PartiesHero';
+// import VenueSection from '../components/VenueSection';
+// import ContactForm from '../components/ContactForm';
+// import HireHero from '../components/HireHero';
+// import GreyScale from '../components/GreyScale';
+// import Info from '../components/Info';
+
 import Venue from '../components/Venue';
-import Info from '../components/Info';
-import Slider from '../components/Slider';
+import Audio from '../components/Audio';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -26,7 +28,8 @@ export default class IndexPage extends React.Component {
           alt="alt"
           frame="/images/basic/secondFrame.png"
         />
-        <HomePageSection
+        <Audio />
+        {/* <HomePageSection
           title="kunal sharma"
           description="Say yes to the perfect wedding venue. Have your special day at our event space in the Warwickshire countryside or take our vintage mobile venue to a location of your choosing. Whether you want to go traditional with silver service or festival-style with the best street food vendors, we can create your dream wedding"
           flex
@@ -47,7 +50,7 @@ export default class IndexPage extends React.Component {
         />
         <GreyScale src="/images/photo-6@2x.jpg" alt="alt" />
         <Info />
-        <Slider />
+        <Slider /> */}
       </Layout>
     );
   }
