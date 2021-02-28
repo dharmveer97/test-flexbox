@@ -13,7 +13,7 @@ import Layout from '../components/Layout';
 // import Info from '../components/Info';
 
 import Venue from '../components/Venue';
-import Audio from '../components/Audio';
+import Video from '../components/Video';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -28,7 +28,10 @@ export default class IndexPage extends React.Component {
           alt="alt"
           frame="/images/basic/secondFrame.png"
         />
-        <Audio />
+        <Video
+          videoTitle="Path"
+          videoSrcURL="http://radio2.sikhnet.com:8033/live"
+        />
         {/* <HomePageSection
           title="kunal sharma"
           description="Say yes to the perfect wedding venue. Have your special day at our event space in the Warwickshire countryside or take our vintage mobile venue to a location of your choosing. Whether you want to go traditional with silver service or festival-style with the best street food vendors, we can create your dream wedding"
