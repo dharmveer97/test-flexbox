@@ -7,17 +7,12 @@ function App() {
         <div className="card">
           {/* http://radio2.sikhnet.com:8033/live */}
           <div className="card-content">
-            <figure className="image is-16by9">
-              <iframe
-                title="live"
-                className="has-ratio"
-                width="640"
-                height="360"
+            <audio controls>
+              <source
                 src="http://radio2.sikhnet.com:8033/live"
-                frameBorder="0"
-                allowFullScreen
+                type="audio/mpeg"
               />
-            </figure>
+            </audio>
           </div>
         </div>
       </div>
