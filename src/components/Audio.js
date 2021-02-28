@@ -9,7 +9,7 @@ function App() {
         <a href="https://www.cluemediator.com">Clue Mediator</a>
       </h3>
       <ReactPlayer
-        url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+        url="http://radio2.sikhnet.com:8033/live"
         width="400px"
         height="50px"
         playing={false}
